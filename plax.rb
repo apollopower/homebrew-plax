@@ -5,21 +5,21 @@
 class Plax < Formula
   desc "Parallel, isolated development environments for coding agents"
   homepage "https://github.com/apollopower/plax"
-  version "0.2.0"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/apollopower/plax/releases/download/v0.2.0/plax_0.2.0_darwin_amd64.zip"
-      sha256 "1e898f8fafaa462745672c82210093b69650fe2c996592c3049a44e079a4607a"
+      url "https://github.com/apollopower/plax/releases/download/v1.0.0/plax_1.0.0_darwin_amd64.zip"
+      sha256 "55eb10ce39d84fdf016fa5e12d76e9b4b3c687dbbd0aef05eff0f04ee3f2c448"
 
       define_method(:install) do
         bin.install "plax"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/apollopower/plax/releases/download/v0.2.0/plax_0.2.0_darwin_arm64.zip"
-      sha256 "c97fce22feba3fb4aeac7c6c5731876af804be404cbc66a15bcc8515983f9d98"
+      url "https://github.com/apollopower/plax/releases/download/v1.0.0/plax_1.0.0_darwin_arm64.zip"
+      sha256 "291847cf3d80ef05061c162623ac92a369266e6b3f56f8dadaabcdff8bf92361"
 
       define_method(:install) do
         bin.install "plax"
@@ -29,15 +29,15 @@ class Plax < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/apollopower/plax/releases/download/v0.2.0/plax_0.2.0_linux_amd64.tar.gz"
-      sha256 "87bc61a261770b8d41eabbccf1734908dacb884a8bf98a945d2982c099ddb582"
+      url "https://github.com/apollopower/plax/releases/download/v1.0.0/plax_1.0.0_linux_amd64.tar.gz"
+      sha256 "82fec75ab32ff71aa0f30a1d2e2dddf1edf2935ec6023bf1fa4f20ffda5fb22d"
       define_method(:install) do
         bin.install "plax"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/apollopower/plax/releases/download/v0.2.0/plax_0.2.0_linux_arm64.tar.gz"
-      sha256 "759e8dd18dfa538f83672af74c38d91d8050afba4b8a463269a921b885372a0d"
+      url "https://github.com/apollopower/plax/releases/download/v1.0.0/plax_1.0.0_linux_arm64.tar.gz"
+      sha256 "6e99dbfda4245991c67ce78bbd2a00dd137eb1a01d73160942e71c32cc52249b"
       define_method(:install) do
         bin.install "plax"
       end
